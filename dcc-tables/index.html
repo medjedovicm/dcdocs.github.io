@@ -1,0 +1,855 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.2">
+    
+    
+      
+        <title>Tables - Data Controller for SAS® Product Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.ba0fd1a6.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../font-awesome.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="amber">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#data-controller-for-sas-adding-tables" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Data Controller for SAS® Product Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../img/favicon.ico" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Data Controller for SAS® Product Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Tables
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <span class="md-nav__button md-logo">
+      
+        <img src="../img/favicon.ico" width="48" height="48">
+      
+    </span>
+    Data Controller for SAS® Product Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Using Data Controller
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Using Data Controller
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dc-overview/" title="DC Overview" class="md-nav__link">
+      DC Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dc-userguide/" title="DC User Guide" class="md-nav__link">
+      DC User Guide
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Configuring Data Controller
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Configuring Data Controller
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tables
+      </label>
+    
+    <a href="./" title="Tables" class="md-nav__link md-nav__link--active">
+      Tables
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#details" title="Details" class="md-nav__link">
+    Details
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#libref" title="LIBREF" class="md-nav__link">
+    LIBREF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsn" title="DSN" class="md-nav__link">
+    DSN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#num_of_approvals_required" title="NUM_OF_APPROVALS_REQUIRED" class="md-nav__link">
+    NUM_OF_APPROVALS_REQUIRED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadtype" title="LOADTYPE" class="md-nav__link">
+    LOADTYPE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buskey" title="BUSKEY" class="md-nav__link">
+    BUSKEY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#var_txfrom-var_txto" title="VAR_TXFROM / VAR_TXTO" class="md-nav__link">
+    VAR_TXFROM / VAR_TXTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#var_busfrom-var_busto" title="VAR_BUSFROM / VAR_BUSTO" class="md-nav__link">
+    VAR_BUSFROM / VAR_BUSTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#var_processed" title="VAR_PROCESSED" class="md-nav__link">
+    VAR_PROCESSED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close_vars" title="CLOSE_VARS" class="md-nav__link">
+    CLOSE_VARS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre_edit_hook" title="PRE_EDIT_HOOK" class="md-nav__link">
+    PRE_EDIT_HOOK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post_edit_hook" title="POST_EDIT_HOOK" class="md-nav__link">
+    POST_EDIT_HOOK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre_approve_hook" title="PRE_APPROVE_HOOK" class="md-nav__link">
+    PRE_APPROVE_HOOK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post_approve-hook" title="POST_APPROVE HOOK" class="md-nav__link">
+    POST_APPROVE HOOK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signoff_cols" title="SIGNOFF_COLS" class="md-nav__link">
+    SIGNOFF_COLS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signoff_hook" title="SIGNOFF_HOOK" class="md-nav__link">
+    SIGNOFF_HOOK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes" title="NOTES" class="md-nav__link">
+    NOTES
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rk_underlying" title="RK_UNDERLYING" class="md-nav__link">
+    RK_UNDERLYING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helpful_link" title="HELPFUL_LINK" class="md-nav__link">
+    HELPFUL_LINK
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dcc-security/" title="Security" class="md-nav__link">
+      Security
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dcc-selectbox/" title="Selectboxes" class="md-nav__link">
+      Selectboxes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Installing Data Controller
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Installing Data Controller
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dci-backend/" title="Backend" class="md-nav__link">
+      Backend
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dci-frontend/" title="Frontend" class="md-nav__link">
+      Frontend
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#details" title="Details" class="md-nav__link">
+    Details
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#libref" title="LIBREF" class="md-nav__link">
+    LIBREF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dsn" title="DSN" class="md-nav__link">
+    DSN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#num_of_approvals_required" title="NUM_OF_APPROVALS_REQUIRED" class="md-nav__link">
+    NUM_OF_APPROVALS_REQUIRED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadtype" title="LOADTYPE" class="md-nav__link">
+    LOADTYPE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buskey" title="BUSKEY" class="md-nav__link">
+    BUSKEY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#var_txfrom-var_txto" title="VAR_TXFROM / VAR_TXTO" class="md-nav__link">
+    VAR_TXFROM / VAR_TXTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#var_busfrom-var_busto" title="VAR_BUSFROM / VAR_BUSTO" class="md-nav__link">
+    VAR_BUSFROM / VAR_BUSTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#var_processed" title="VAR_PROCESSED" class="md-nav__link">
+    VAR_PROCESSED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close_vars" title="CLOSE_VARS" class="md-nav__link">
+    CLOSE_VARS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre_edit_hook" title="PRE_EDIT_HOOK" class="md-nav__link">
+    PRE_EDIT_HOOK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post_edit_hook" title="POST_EDIT_HOOK" class="md-nav__link">
+    POST_EDIT_HOOK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre_approve_hook" title="PRE_APPROVE_HOOK" class="md-nav__link">
+    PRE_APPROVE_HOOK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post_approve-hook" title="POST_APPROVE HOOK" class="md-nav__link">
+    POST_APPROVE HOOK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signoff_cols" title="SIGNOFF_COLS" class="md-nav__link">
+    SIGNOFF_COLS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signoff_hook" title="SIGNOFF_HOOK" class="md-nav__link">
+    SIGNOFF_HOOK
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes" title="NOTES" class="md-nav__link">
+    NOTES
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rk_underlying" title="RK_UNDERLYING" class="md-nav__link">
+    RK_UNDERLYING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helpful_link" title="HELPFUL_LINK" class="md-nav__link">
+    HELPFUL_LINK
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="data-controller-for-sas-adding-tables">Data Controller for SAS® - Adding Tables</h1>
+<h2 id="overview">Overview</h2>
+<p>Adding tables to the Data Controller is a matter of configuration, specifically the addition of a new record to the <code>DATACTRL.MPE_TABLES</code> table.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to surface the table to users, appropriate groups should be configured as per <a href="../dcc-security/">security</a> settings.</p>
+</div>
+<p><img alt="screenshot" src="../img/configtable.png" /></p>
+<h2 id="details">Details</h2>
+<p>Each table to be edited in the Data Controller is represented by one record in <code>DATACTRL.MPE_TABLES</code>.  The fields should be populated as follows:</p>
+<h3 id="libref">LIBREF</h3>
+<p>The libref of the table.  If not pre-assigned, DC will assign it at runtime using the first definition found in metadata, using this <a href="https://github.com/Boemska/macrocore/blob/master/meta/mm_assigndirectlib.sas">macro</a>.</p>
+<h3 id="dsn">DSN</h3>
+<p>The dataset (table) name as visible when assigning a direct libref connection to <code>LIBREF</code>.</p>
+<h3 id="num_of_approvals_required">NUM_OF_APPROVALS_REQUIRED</h3>
+<p>This is an integer representing the number of approvals required before a table is updated.  This mechanism lets you insist on, say, 2 or 3 approvals before sensitive data is updated following a submission.  Note that only one rejection is ever necessary to remove the submission.
+This is a required field.</p>
+<h3 id="loadtype">LOADTYPE</h3>
+<p>The loadtype determines the nature of the update to be applied.  Valid values are as follows:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The support for BITEMPORAL loads is restricted, in the sense it is only possible to load data at a single point in time (no support for loading multiple business date ranges for a single business key).  The workaround is simply to load each date range separately.</p>
+</div>
+<h3 id="buskey">BUSKEY</h3>
+<p>The business (natural) key of the table.  For SCD2 / Bitemporal, this does NOT include the validity dates.  For Retained / Surrogate key tables, this contains the actual surrogate key - the underlying fields that are used to create the surrogate key are specified in <a href="#rk_underlying">RK_UNDERLYING</a>.
+This is a required field.</p>
+<h3 id="var_txfrom-var_txto">VAR_TXFROM / VAR_TXTO</h3>
+<p>The SCD2 type validity dates, representing the point in time at which the field was created (<code>VAR_TXFROM</code>) and when it was closed out (<code>VAR_TXTO</code>) from a change or deletion.  If the record is active, the <code>VAR_TXTO</code> field would contain a high value.  <code>VAR_TXFROM</code> is a part of the physical key of the underlying table.
+These fields should contain the NAME of the variables which contain the open / close timestamps in the underlying table.
+Leave blank if not required.</p>
+<h3 id="var_busfrom-var_busto">VAR_BUSFROM / VAR_BUSTO</h3>
+<p>The BITEMPORAL <em>business</em> dates which represent the reporting period to which the record is valid.  Typically these contain <em>date</em> values (rather than <em>datetime</em> values).  If variables are specified here, then the <a href="#loadtype">LOADTYPE</a> should be <code>BITEMPORAL</code>.
+Leave blank if not required.</p>
+<h3 id="var_processed">VAR_PROCESSED</h3>
+<p>Set the name of a variable (eg <code>processed_dttm</code>) which should be given a current timestamp whenever the table is updated.
+Leave blank if not required.</p>
+<h3 id="close_vars">CLOSE_VARS</h3>
+<p>By default, the data controller will only process the records that are part of a changeset.  This means that records should be explicity marked for deletion.  But what if you are performing a reload of a monthly batch, and the <em>absence</em> of a record implies that it is no longer required?  For this scenario, it is necessary to specify the range within a 'complete' load is expected.  For instance, by reporting month, or month + product.  When performing loads, the DC will then first extract a distinct list of values for this key and close them out in the target table, before performing the upload.  The <code>CLOSE_VARS</code> are typically a subset of the <a href="#buskey">BUSKEY</a> fields.
+Leave blank if not required.</p>
+<h3 id="pre_edit_hook">PRE_EDIT_HOOK</h3>
+<p>The full path / location (unquoted) of a SAS program that will be <code>%inc</code>'d prior to an edit being made.  This allows a particular view of a table to be presented to a user for editing (eg masking columns etc). 
+Leave blank if not required.</p>
+<h3 id="post_edit_hook">POST_EDIT_HOOK</h3>
+<p>The full path / location (unquoted) of a SAS program that will be <code>%inc</code>'d after an edit has been made.  This modifies the CSV that is created in the staging area, and can be useful for augmenting data / applying complex DQ fixes.
+Leave blank if not required.</p>
+<h3 id="pre_approve_hook">PRE_APPROVE_HOOK</h3>
+<p>The full path / location (unquoted) of a SAS program that will be <code>%inc</code>'d before an approval diff is generated.  This modifies the value that is presented to an approver on the approve screen, and can be helpful in terms of ensuring that information is presented in way that can be easily consumed by approvers.
+Leave blank if not required.</p>
+<h3 id="post_approve-hook">POST_APPROVE HOOK</h3>
+<p>The full path / location (unquoted) of a SAS program that will be <code>%inc</code>'d after an approval is made.  This is the most common type of hook script, and is useful for, say, running a SAS job after a mapping table is updated, or running a model after changing a parameter.
+Leave blank if not required.</p>
+<h3 id="signoff_cols">SIGNOFF_COLS</h3>
+<p>Used to determine a range (eg reporting month) to which a 'final version' can be marked.  This allows a particular version of data to be marked as final, meaning that the data can continue to change afterwards (reports can simply query for the timestamp of the 'final' version of the data).
+Leave blank if not required.</p>
+<h3 id="signoff_hook">SIGNOFF_HOOK</h3>
+<p>The full path / location (unquoted) of a SAS program that will be <code>%inc</code>'d after a 'final version' has been signed off.
+Leave blank if not required.</p>
+<h3 id="notes">NOTES</h3>
+<p>Content entered here will be displayed to the approver on signoff.
+Not required, but recommended.</p>
+<h3 id="rk_underlying">RK_UNDERLYING</h3>
+<p>For retained / surrogate keys, an auto-incrementing field is used to represent each unique record.  In this case, the RK (integer) field itself should be added in the <a href="#buskey">BUSKEY</a> column, and the natural / underlying key should be added here.
+Leave blank unless using retained / surrogate keys.</p>
+<h3 id="helpful_link">HELPFUL_LINK</h3>
+<p>If more information is available to describe the table being updated (eg on sharepoint), provide a url here and it will be made available to approvers.
+Leave blank if not required.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../dc-userguide/" title="DC User Guide" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                DC User Guide
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../dcc-security/" title="Security" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Security
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            All rights reserved &copy;2018 Macro People Ltd.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.a59e2a89.js"></script>
+      
+      <script>app.initialize({version:"0.17.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

@@ -1,0 +1,319 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Data Controller Documentation\n\n\nOverview\n\n\nThe Data Controller for SAS\u00ae enables users to self serve their data changes, and for data owners to retain control over those updates by reviewing and approving each update.\n\n\n\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nDocuments\n\n\nThe following documents are available on this site:\n\n\n\n\nOverview\n\n\nUser Guide\n\n\nConfig - Security\n\n\nInstallation\n\n\n\n\nOnline resources\n\n\nThe following sites contain additional information on the Data Controller for SAS\u00ae:\n\n\n\n\nDC Overview \nPresentation\n\n\nData Controller \nLinkedIn\n page", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#data-controller-documentation", 
+            "text": "", 
+            "title": "Data Controller Documentation"
+        }, 
+        {
+            "location": "/#overview", 
+            "text": "The Data Controller for SAS\u00ae enables users to self serve their data changes, and for data owners to retain control over those updates by reviewing and approving each update.   For full documentation visit  mkdocs.org .", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/#documents", 
+            "text": "The following documents are available on this site:   Overview  User Guide  Config - Security  Installation", 
+            "title": "Documents"
+        }, 
+        {
+            "location": "/#online-resources", 
+            "text": "The following sites contain additional information on the Data Controller for SAS\u00ae:   DC Overview  Presentation  Data Controller  LinkedIn  page", 
+            "title": "Online resources"
+        }, 
+        {
+            "location": "/dc-overview/", 
+            "text": "Data Controller for SAS: Overview\n\n\nWhat does the Data Controller do?\n\n\nThe Data Controller for SAS allows users to add, modify data. All changes are staged and approved before being applied to the target table. The review process, as well as using generic and repeatable code to perform updates, works to ensure data integrity.\n\n\nWhat is a Target Table?\n\n\nA Target Table is a physical table, such as a SAS dataset or a Table in a database. The attributes of this table (eg Primary Key, loadtype, library, SCD variables etc) will have been predefined by your administrator so that you can change the data in that table safely and easily.\n\n\nWhy do I need the Data Controller?\n\n\nAlternatives to using the Data Controller for performing data updates include:\n\n\n\n\nWriting SAS or SQL code yourself to perform data updates\n\n\nAsking your DBA to to perform updates (following a change mangement process)\n\n\nSaving CSVs / data on a shared-visibility network drive and building / running jobs to perform uploads in batch\n\n\nOpening (and therefore locking) datasets in Enterprise Guide or SAS\u00ae Table Viewer to perform direct updates\n\n\nBuilding a custom web application yourself to perform secure updates\n\n\n\n\nProblems with the above approaches include one or more of the following:\n\n\n\n\nRisk of manual error / data corruption\n\n\nEnd users requiring direct write access to critical data sources in production\n\n\nBreaches due to unnecessary parties having access to the data\n\n\nInability to trace who made the change, when, and why\n\n\nReliance on key individuals to perform updates\n\n\nRequirement to build load routines every time a new data source is added\n\n\nUpload routines have to be manually modified when the table changes\n\n\nLegacy 'black box' solutions with little to no testing, documentation or support\n\n\n\n\nThe Data Controller for SAS\u00ae solves the issues above.\n\n\nHow does it work?\n\n\nFrom the Editor tab, a user selects a library and table for editing. Data can then be edited directly, or a uploaded from a file.  After submitting the change, the data is loaded to a secure staging area, and the approvers are notified.  The approver (wich may also be the editor, depeneding on cconfiguration) reviews the changes and accepts / or rejects. If accepted, the changes are applied to the target table by the system account, and the history of that change is recorded.\n\n\nWho is it for?\n\n\nThere are 5 roles identified for users of the Data Controller:\n\n\n\n\nViewer\n.  A viewer uses the Data Controller as a means to explore data without risk of locking datasets. By using the Data Controller to view data, it also becomes possible to 'link' to data (share a url to share a table with a colleague, for instance).\n\n\nEditor\n.  An editor makes changes to data in a table (add, modify, delete) and submits those changes to the approver(s) for acceptance.\n\n\nApprover\n.  An approver accepts / rejects proposed changes to data under their control. If accepted, the change is applied to the target table.\n\n\nAuditor\n.  An auditor has the ability to review the history of changes to a particular table.\n\n\nAdministrator\n.  An administrator has the ability to add new tables to the Data Controller, and to configure the security settings (at metadata group level) as required.", 
+            "title": "DC Overview"
+        }, 
+        {
+            "location": "/dc-overview/#data-controller-for-sas-overview", 
+            "text": "", 
+            "title": "Data Controller for SAS: Overview"
+        }, 
+        {
+            "location": "/dc-overview/#what-does-the-data-controller-do", 
+            "text": "The Data Controller for SAS allows users to add, modify data. All changes are staged and approved before being applied to the target table. The review process, as well as using generic and repeatable code to perform updates, works to ensure data integrity.", 
+            "title": "What does the Data Controller do?"
+        }, 
+        {
+            "location": "/dc-overview/#what-is-a-target-table", 
+            "text": "A Target Table is a physical table, such as a SAS dataset or a Table in a database. The attributes of this table (eg Primary Key, loadtype, library, SCD variables etc) will have been predefined by your administrator so that you can change the data in that table safely and easily.", 
+            "title": "What is a Target Table?"
+        }, 
+        {
+            "location": "/dc-overview/#why-do-i-need-the-data-controller", 
+            "text": "Alternatives to using the Data Controller for performing data updates include:   Writing SAS or SQL code yourself to perform data updates  Asking your DBA to to perform updates (following a change mangement process)  Saving CSVs / data on a shared-visibility network drive and building / running jobs to perform uploads in batch  Opening (and therefore locking) datasets in Enterprise Guide or SAS\u00ae Table Viewer to perform direct updates  Building a custom web application yourself to perform secure updates   Problems with the above approaches include one or more of the following:   Risk of manual error / data corruption  End users requiring direct write access to critical data sources in production  Breaches due to unnecessary parties having access to the data  Inability to trace who made the change, when, and why  Reliance on key individuals to perform updates  Requirement to build load routines every time a new data source is added  Upload routines have to be manually modified when the table changes  Legacy 'black box' solutions with little to no testing, documentation or support   The Data Controller for SAS\u00ae solves the issues above.", 
+            "title": "Why do I need the Data Controller?"
+        }, 
+        {
+            "location": "/dc-overview/#how-does-it-work", 
+            "text": "From the Editor tab, a user selects a library and table for editing. Data can then be edited directly, or a uploaded from a file.  After submitting the change, the data is loaded to a secure staging area, and the approvers are notified.  The approver (wich may also be the editor, depeneding on cconfiguration) reviews the changes and accepts / or rejects. If accepted, the changes are applied to the target table by the system account, and the history of that change is recorded.", 
+            "title": "How does it work?"
+        }, 
+        {
+            "location": "/dc-overview/#who-is-it-for", 
+            "text": "There are 5 roles identified for users of the Data Controller:   Viewer .  A viewer uses the Data Controller as a means to explore data without risk of locking datasets. By using the Data Controller to view data, it also becomes possible to 'link' to data (share a url to share a table with a colleague, for instance).  Editor .  An editor makes changes to data in a table (add, modify, delete) and submits those changes to the approver(s) for acceptance.  Approver .  An approver accepts / rejects proposed changes to data under their control. If accepted, the change is applied to the target table.  Auditor .  An auditor has the ability to review the history of changes to a particular table.  Administrator .  An administrator has the ability to add new tables to the Data Controller, and to configure the security settings (at metadata group level) as required.", 
+            "title": "Who is it for?"
+        }, 
+        {
+            "location": "/dc-userguide/", 
+            "text": "Data Controller for SAS: User Guide\n\n\nOverview\n\n\nThe Data Controller has 5 tabs, as follows:\n\n\n\n\nViewer\n.  This tab lets users view any table to which they have been granted access in metadata.  They can also download the data as csv, excel, or as a SAS program (datalines).\n\n\nEditor\n.  This tab enables users to add, modify or delete data. This can be done directly in the browser, or by uploading a CSV file. Values can also be copy-pasted from a spreadsheet. Once changes are ready, they can be submitted, with a corresponding reason.\n\n\nSubmissions\n.  This shows and editor the outstanding changes that have been submitted for approval (but have not yet been approved or rejected).\n\n\nApprovals\n.  This shows an approver all the outstanding changes that are waiting to be approved.\n\n\nHistory\n.  This shows an auditor, or other interested party, what changes have been submitted for each table over time.\n\n\n\n\nViewer\n\n\nThe Viewer screen lets any user with a SAS profile view tables to which they have already been granted access in metadata.  Simply Select libary / table and the View button.  The first 5,000 rows of the table in question are displayed.\n\n\nIt is also possible to build complex filters against data before viewing, via the Filter button.  The filter string is converted into an ID, as can be seen in the URL.  Simply share this link with any other SAS user to share that particular view.\nThe Viewer also has a Download option.  This lets you Download your view of the data in CSV, Excel, and SAS format.  The SAS format option gives you a SAS program with the relevant DATALINES so that you can easily recreate your data in another instance of SAS.\n\n\nEditor\n\n\nThe Editor screen lets users who have been pre-authorised (via the \nDATACTRL.MPE_SECURITY\n table) to edit a particular table.  A user selects a particular library, and table and then has 3 options:\n\n\n1 - \nFilter\n.  The user can filter before proceeding to perform edits.\n\n\n2 - \nUpload\n.  The user can upload a CSV file directly, instead of using the interface.  The CSV must have the same structure as the target.  Use the 'download csv' option in Viewer to obtain a template of this CSV.\n\n\n3 - \nEdit\n.  The main interface, explained below.\n\n\nIn the main interface, data is displayed in tabular format.  The first column is always \"Delete?\".  This allows you to mark rows for deletion.  Note that removing a row from display does not mark it for deletion!  It simply means that this row is not part of the changeset being submitted.\nThe next set of columns are the Primary Key, and are shaded grey.  If the table has a surrogate / retained key, then it is the Business Key that is shown here (the RK field is calculated / updated at the backend).  For SCD2 type tables, the 'validity' fields are not shown.  It is assumed that the user is always working with the current version of the data, and the view is filtered as such.\nAfter this, remaining columns are shown.  Dates / datetime fields have appropriate datepickers.  Other fields may also have dropdowns to ensure entry of standard values, these can be configured in the \nDATACTRL.MPE_SELECTBOX\n table.\n\n\nNew rows can be added using the right click context menu, or the 'Add Row' button.  The data can also be sorted by clicking on the column headers.\n\n\nWhen ready to submit, hit the SUBMIT button and enter a reason for the change.  The owners of the data are now alerted (so long as their email addresses are in metadata) with a link to the approve screen.\nIf you are also an approver you can approve this change yourself (and you have a button now available so you can approve immediately).  See Approve section.\n\n\nSubmitted\n\n\nThis page shows a list of the changes you have submitted (that are not yet approved).\n\n\nApprovals\n\n\nThis shows the list of changes that have been submitted to you (or your group) for approval.\n\n\nHistory\n\n\nView the list of changes to each table, who made the change, when, etc.", 
+            "title": "DC User Guide"
+        }, 
+        {
+            "location": "/dc-userguide/#data-controller-for-sas-user-guide", 
+            "text": "", 
+            "title": "Data Controller for SAS: User Guide"
+        }, 
+        {
+            "location": "/dc-userguide/#overview", 
+            "text": "The Data Controller has 5 tabs, as follows:   Viewer .  This tab lets users view any table to which they have been granted access in metadata.  They can also download the data as csv, excel, or as a SAS program (datalines).  Editor .  This tab enables users to add, modify or delete data. This can be done directly in the browser, or by uploading a CSV file. Values can also be copy-pasted from a spreadsheet. Once changes are ready, they can be submitted, with a corresponding reason.  Submissions .  This shows and editor the outstanding changes that have been submitted for approval (but have not yet been approved or rejected).  Approvals .  This shows an approver all the outstanding changes that are waiting to be approved.  History .  This shows an auditor, or other interested party, what changes have been submitted for each table over time.", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/dc-userguide/#viewer", 
+            "text": "The Viewer screen lets any user with a SAS profile view tables to which they have already been granted access in metadata.  Simply Select libary / table and the View button.  The first 5,000 rows of the table in question are displayed.  It is also possible to build complex filters against data before viewing, via the Filter button.  The filter string is converted into an ID, as can be seen in the URL.  Simply share this link with any other SAS user to share that particular view.\nThe Viewer also has a Download option.  This lets you Download your view of the data in CSV, Excel, and SAS format.  The SAS format option gives you a SAS program with the relevant DATALINES so that you can easily recreate your data in another instance of SAS.", 
+            "title": "Viewer"
+        }, 
+        {
+            "location": "/dc-userguide/#editor", 
+            "text": "The Editor screen lets users who have been pre-authorised (via the  DATACTRL.MPE_SECURITY  table) to edit a particular table.  A user selects a particular library, and table and then has 3 options:  1 -  Filter .  The user can filter before proceeding to perform edits.  2 -  Upload .  The user can upload a CSV file directly, instead of using the interface.  The CSV must have the same structure as the target.  Use the 'download csv' option in Viewer to obtain a template of this CSV.  3 -  Edit .  The main interface, explained below.  In the main interface, data is displayed in tabular format.  The first column is always \"Delete?\".  This allows you to mark rows for deletion.  Note that removing a row from display does not mark it for deletion!  It simply means that this row is not part of the changeset being submitted.\nThe next set of columns are the Primary Key, and are shaded grey.  If the table has a surrogate / retained key, then it is the Business Key that is shown here (the RK field is calculated / updated at the backend).  For SCD2 type tables, the 'validity' fields are not shown.  It is assumed that the user is always working with the current version of the data, and the view is filtered as such.\nAfter this, remaining columns are shown.  Dates / datetime fields have appropriate datepickers.  Other fields may also have dropdowns to ensure entry of standard values, these can be configured in the  DATACTRL.MPE_SELECTBOX  table.  New rows can be added using the right click context menu, or the 'Add Row' button.  The data can also be sorted by clicking on the column headers.  When ready to submit, hit the SUBMIT button and enter a reason for the change.  The owners of the data are now alerted (so long as their email addresses are in metadata) with a link to the approve screen.\nIf you are also an approver you can approve this change yourself (and you have a button now available so you can approve immediately).  See Approve section.", 
+            "title": "Editor"
+        }, 
+        {
+            "location": "/dc-userguide/#submitted", 
+            "text": "This page shows a list of the changes you have submitted (that are not yet approved).", 
+            "title": "Submitted"
+        }, 
+        {
+            "location": "/dc-userguide/#approvals", 
+            "text": "This shows the list of changes that have been submitted to you (or your group) for approval.", 
+            "title": "Approvals"
+        }, 
+        {
+            "location": "/dc-userguide/#history", 
+            "text": "View the list of changes to each table, who made the change, when, etc.", 
+            "title": "History"
+        }, 
+        {
+            "location": "/dcc-tables/", 
+            "text": "Data Controller for SAS\u00ae - Adding Tables\n\n\nOverview\n\n\nAdding tables to the Data Controller is a matter of configuration, specifically the addition of a new record to the \nDATACTRL.MPE_TABLES\n table.\n\n\n\n\nNote\n\n\nIn order to surface the table to users, appropriate groups should be configured as per \nsecurity\n settings.\n\n\n\n\n\n\nDetails\n\n\nEach table to be edited in the Data Controller is represented by one record in \nDATACTRL.MPE_TABLES\n.  The fields should be populated as follows:\n\n\nLIBREF\n\n\nThe libref of the table.  If not pre-assigned, DC will assign it at runtime using the first definition found in metadata, using this \nmacro\n.\n\n\nDSN\n\n\nThe dataset (table) name as visible when assigning a direct libref connection to \nLIBREF\n.\n\n\nNUM_OF_APPROVALS_REQUIRED\n\n\nThis is an integer representing the number of approvals required before a table is updated.  This mechanism lets you insist on, say, 2 or 3 approvals before sensitive data is updated following a submission.  Note that only one rejection is ever necessary to remove the submission.\nThis is a required field.\n\n\nLOADTYPE\n\n\nThe loadtype determines the nature of the update to be applied.  Valid values are as follows:\n\n\n\n\nNote\n\n\nThe support for BITEMPORAL loads is restricted, in the sense it is only possible to load data at a single point in time (no support for loading multiple business date ranges for a single business key).  The workaround is simply to load each date range separately.\n\n\n\n\nBUSKEY\n\n\nThe business (natural) key of the table.  For SCD2 / Bitemporal, this does NOT include the validity dates.  For Retained / Surrogate key tables, this contains the actual surrogate key - the underlying fields that are used to create the surrogate key are specified in \nRK_UNDERLYING\n.\nThis is a required field.\n\n\nVAR_TXFROM / VAR_TXTO\n\n\nThe SCD2 type validity dates, representing the point in time at which the field was created (\nVAR_TXFROM\n) and when it was closed out (\nVAR_TXTO\n) from a change or deletion.  If the record is active, the \nVAR_TXTO\n field would contain a high value.  \nVAR_TXFROM\n is a part of the physical key of the underlying table.\nThese fields should contain the NAME of the variables which contain the open / close timestamps in the underlying table.\nLeave blank if not required.\n\n\nVAR_BUSFROM / VAR_BUSTO\n\n\nThe BITEMPORAL \nbusiness\n dates which represent the reporting period to which the record is valid.  Typically these contain \ndate\n values (rather than \ndatetime\n values).  If variables are specified here, then the \nLOADTYPE\n should be \nBITEMPORAL\n.\nLeave blank if not required.\n\n\nVAR_PROCESSED\n\n\nSet the name of a variable (eg \nprocessed_dttm\n) which should be given a current timestamp whenever the table is updated.\nLeave blank if not required.\n\n\nCLOSE_VARS\n\n\nBy default, the data controller will only process the records that are part of a changeset.  This means that records should be explicity marked for deletion.  But what if you are performing a reload of a monthly batch, and the \nabsence\n of a record implies that it is no longer required?  For this scenario, it is necessary to specify the range within a 'complete' load is expected.  For instance, by reporting month, or month + product.  When performing loads, the DC will then first extract a distinct list of values for this key and close them out in the target table, before performing the upload.  The \nCLOSE_VARS\n are typically a subset of the \nBUSKEY\n fields.\nLeave blank if not required.\n\n\nPRE_EDIT_HOOK\n\n\nThe full path / location (unquoted) of a SAS program that will be \n%inc\n'd prior to an edit being made.  This allows a particular view of a table to be presented to a user for editing (eg masking columns etc). \nLeave blank if not required.\n\n\nPOST_EDIT_HOOK\n\n\nThe full path / location (unquoted) of a SAS program that will be \n%inc\n'd after an edit has been made.  This modifies the CSV that is created in the staging area, and can be useful for augmenting data / applying complex DQ fixes.\nLeave blank if not required.\n\n\nPRE_APPROVE_HOOK\n\n\nThe full path / location (unquoted) of a SAS program that will be \n%inc\n'd before an approval diff is generated.  This modifies the value that is presented to an approver on the approve screen, and can be helpful in terms of ensuring that information is presented in way that can be easily consumed by approvers.\nLeave blank if not required.\n\n\nPOST_APPROVE HOOK\n\n\nThe full path / location (unquoted) of a SAS program that will be \n%inc\n'd after an approval is made.  This is the most common type of hook script, and is useful for, say, running a SAS job after a mapping table is updated, or running a model after changing a parameter.\nLeave blank if not required.\n\n\nSIGNOFF_COLS\n\n\nUsed to determine a range (eg reporting month) to which a 'final version' can be marked.  This allows a particular version of data to be marked as final, meaning that the data can continue to change afterwards (reports can simply query for the timestamp of the 'final' version of the data).\nLeave blank if not required.\n\n\nSIGNOFF_HOOK\n\n\nThe full path / location (unquoted) of a SAS program that will be \n%inc\n'd after a 'final version' has been signed off.\nLeave blank if not required.\n\n\nNOTES\n\n\nContent entered here will be displayed to the approver on signoff.\nNot required, but recommended.\n\n\nRK_UNDERLYING\n\n\nFor retained / surrogate keys, an auto-incrementing field is used to represent each unique record.  In this case, the RK (integer) field itself should be added in the \nBUSKEY\n column, and the natural / underlying key should be added here.\nLeave blank unless using retained / surrogate keys.\n\n\nHELPFUL_LINK\n\n\nIf more information is available to describe the table being updated (eg on sharepoint), provide a url here and it will be made available to approvers.\nLeave blank if not required.", 
+            "title": "Tables"
+        }, 
+        {
+            "location": "/dcc-tables/#data-controller-for-sas-adding-tables", 
+            "text": "", 
+            "title": "Data Controller for SAS\u00ae - Adding Tables"
+        }, 
+        {
+            "location": "/dcc-tables/#overview", 
+            "text": "Adding tables to the Data Controller is a matter of configuration, specifically the addition of a new record to the  DATACTRL.MPE_TABLES  table.   Note  In order to surface the table to users, appropriate groups should be configured as per  security  settings.", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/dcc-tables/#details", 
+            "text": "Each table to be edited in the Data Controller is represented by one record in  DATACTRL.MPE_TABLES .  The fields should be populated as follows:", 
+            "title": "Details"
+        }, 
+        {
+            "location": "/dcc-tables/#libref", 
+            "text": "The libref of the table.  If not pre-assigned, DC will assign it at runtime using the first definition found in metadata, using this  macro .", 
+            "title": "LIBREF"
+        }, 
+        {
+            "location": "/dcc-tables/#dsn", 
+            "text": "The dataset (table) name as visible when assigning a direct libref connection to  LIBREF .", 
+            "title": "DSN"
+        }, 
+        {
+            "location": "/dcc-tables/#num_of_approvals_required", 
+            "text": "This is an integer representing the number of approvals required before a table is updated.  This mechanism lets you insist on, say, 2 or 3 approvals before sensitive data is updated following a submission.  Note that only one rejection is ever necessary to remove the submission.\nThis is a required field.", 
+            "title": "NUM_OF_APPROVALS_REQUIRED"
+        }, 
+        {
+            "location": "/dcc-tables/#loadtype", 
+            "text": "The loadtype determines the nature of the update to be applied.  Valid values are as follows:   Note  The support for BITEMPORAL loads is restricted, in the sense it is only possible to load data at a single point in time (no support for loading multiple business date ranges for a single business key).  The workaround is simply to load each date range separately.", 
+            "title": "LOADTYPE"
+        }, 
+        {
+            "location": "/dcc-tables/#buskey", 
+            "text": "The business (natural) key of the table.  For SCD2 / Bitemporal, this does NOT include the validity dates.  For Retained / Surrogate key tables, this contains the actual surrogate key - the underlying fields that are used to create the surrogate key are specified in  RK_UNDERLYING .\nThis is a required field.", 
+            "title": "BUSKEY"
+        }, 
+        {
+            "location": "/dcc-tables/#var_txfrom-var_txto", 
+            "text": "The SCD2 type validity dates, representing the point in time at which the field was created ( VAR_TXFROM ) and when it was closed out ( VAR_TXTO ) from a change or deletion.  If the record is active, the  VAR_TXTO  field would contain a high value.   VAR_TXFROM  is a part of the physical key of the underlying table.\nThese fields should contain the NAME of the variables which contain the open / close timestamps in the underlying table.\nLeave blank if not required.", 
+            "title": "VAR_TXFROM / VAR_TXTO"
+        }, 
+        {
+            "location": "/dcc-tables/#var_busfrom-var_busto", 
+            "text": "The BITEMPORAL  business  dates which represent the reporting period to which the record is valid.  Typically these contain  date  values (rather than  datetime  values).  If variables are specified here, then the  LOADTYPE  should be  BITEMPORAL .\nLeave blank if not required.", 
+            "title": "VAR_BUSFROM / VAR_BUSTO"
+        }, 
+        {
+            "location": "/dcc-tables/#var_processed", 
+            "text": "Set the name of a variable (eg  processed_dttm ) which should be given a current timestamp whenever the table is updated.\nLeave blank if not required.", 
+            "title": "VAR_PROCESSED"
+        }, 
+        {
+            "location": "/dcc-tables/#close_vars", 
+            "text": "By default, the data controller will only process the records that are part of a changeset.  This means that records should be explicity marked for deletion.  But what if you are performing a reload of a monthly batch, and the  absence  of a record implies that it is no longer required?  For this scenario, it is necessary to specify the range within a 'complete' load is expected.  For instance, by reporting month, or month + product.  When performing loads, the DC will then first extract a distinct list of values for this key and close them out in the target table, before performing the upload.  The  CLOSE_VARS  are typically a subset of the  BUSKEY  fields.\nLeave blank if not required.", 
+            "title": "CLOSE_VARS"
+        }, 
+        {
+            "location": "/dcc-tables/#pre_edit_hook", 
+            "text": "The full path / location (unquoted) of a SAS program that will be  %inc 'd prior to an edit being made.  This allows a particular view of a table to be presented to a user for editing (eg masking columns etc). \nLeave blank if not required.", 
+            "title": "PRE_EDIT_HOOK"
+        }, 
+        {
+            "location": "/dcc-tables/#post_edit_hook", 
+            "text": "The full path / location (unquoted) of a SAS program that will be  %inc 'd after an edit has been made.  This modifies the CSV that is created in the staging area, and can be useful for augmenting data / applying complex DQ fixes.\nLeave blank if not required.", 
+            "title": "POST_EDIT_HOOK"
+        }, 
+        {
+            "location": "/dcc-tables/#pre_approve_hook", 
+            "text": "The full path / location (unquoted) of a SAS program that will be  %inc 'd before an approval diff is generated.  This modifies the value that is presented to an approver on the approve screen, and can be helpful in terms of ensuring that information is presented in way that can be easily consumed by approvers.\nLeave blank if not required.", 
+            "title": "PRE_APPROVE_HOOK"
+        }, 
+        {
+            "location": "/dcc-tables/#post_approve-hook", 
+            "text": "The full path / location (unquoted) of a SAS program that will be  %inc 'd after an approval is made.  This is the most common type of hook script, and is useful for, say, running a SAS job after a mapping table is updated, or running a model after changing a parameter.\nLeave blank if not required.", 
+            "title": "POST_APPROVE HOOK"
+        }, 
+        {
+            "location": "/dcc-tables/#signoff_cols", 
+            "text": "Used to determine a range (eg reporting month) to which a 'final version' can be marked.  This allows a particular version of data to be marked as final, meaning that the data can continue to change afterwards (reports can simply query for the timestamp of the 'final' version of the data).\nLeave blank if not required.", 
+            "title": "SIGNOFF_COLS"
+        }, 
+        {
+            "location": "/dcc-tables/#signoff_hook", 
+            "text": "The full path / location (unquoted) of a SAS program that will be  %inc 'd after a 'final version' has been signed off.\nLeave blank if not required.", 
+            "title": "SIGNOFF_HOOK"
+        }, 
+        {
+            "location": "/dcc-tables/#notes", 
+            "text": "Content entered here will be displayed to the approver on signoff.\nNot required, but recommended.", 
+            "title": "NOTES"
+        }, 
+        {
+            "location": "/dcc-tables/#rk_underlying", 
+            "text": "For retained / surrogate keys, an auto-incrementing field is used to represent each unique record.  In this case, the RK (integer) field itself should be added in the  BUSKEY  column, and the natural / underlying key should be added here.\nLeave blank unless using retained / surrogate keys.", 
+            "title": "RK_UNDERLYING"
+        }, 
+        {
+            "location": "/dcc-tables/#helpful_link", 
+            "text": "If more information is available to describe the table being updated (eg on sharepoint), provide a url here and it will be made available to approvers.\nLeave blank if not required.", 
+            "title": "HELPFUL_LINK"
+        }, 
+        {
+            "location": "/dcc-security/", 
+            "text": "Data Controller for SAS\u00ae - Security\n\n\nSummary\n\n\nThe Data Controller works at the level of Table and Group.  Permissions can only be set at group level, and so there are two parts to adding a user:\n\n\n1 - Adding the user to the relevant group in SAS metadata\n\n\n2 - Ensuring that group has the appropriate access level in the configuration table\n\n\nFor guidance with adding SAS users, see SAS Documentation.\n\n\nDetails\n\n\nIn order to surface a table to a new group, simply add a record to the \nDATACTRL.MPE_SECURITY\n table.  The \nlibrary.dataset\n value should go in the \nBASE_TABLE\n field, the level of access (either \nEDIT\n or \nAPPROVE\n) should go in the \nACCESS_LEVEL\n field, and the exact name of the relevant metadata group should go in the \nSAS_GROUP\n field.  The change should then be submitted, and approved, at which point the new security setting will be applied.", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/dcc-security/#data-controller-for-sas-security", 
+            "text": "", 
+            "title": "Data Controller for SAS\u00ae - Security"
+        }, 
+        {
+            "location": "/dcc-security/#summary", 
+            "text": "The Data Controller works at the level of Table and Group.  Permissions can only be set at group level, and so there are two parts to adding a user:  1 - Adding the user to the relevant group in SAS metadata  2 - Ensuring that group has the appropriate access level in the configuration table  For guidance with adding SAS users, see SAS Documentation.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/dcc-security/#details", 
+            "text": "In order to surface a table to a new group, simply add a record to the  DATACTRL.MPE_SECURITY  table.  The  library.dataset  value should go in the  BASE_TABLE  field, the level of access (either  EDIT  or  APPROVE ) should go in the  ACCESS_LEVEL  field, and the exact name of the relevant metadata group should go in the  SAS_GROUP  field.  The change should then be submitted, and approved, at which point the new security setting will be applied.", 
+            "title": "Details"
+        }, 
+        {
+            "location": "/dcc-selectbox/", 
+            "text": "Data Controller for SAS\u00ae - Selectboxes\n\n\nOverview\n\n\nTo ensure data validity and to improve user experience, it is possible to predesignate specific values for data entry.  These appear to the user as a selectbox within the editor interface.\n\n\nConfiguration\n\n\nValues are added by populating the \nDATACTRL.MPE_SELECTBOX\n table, eg below:\n\n\n\n\nBASE_LIBDS\n\n\nThe library.dataset to which the selectbox needs to be applied\n\n\nBASE_COLUMN\n\n\nThe column in which the selectbox values will be entered\n\n\nSELECTBOX_VALUE\n\n\nThe actual values to be shown in the selectbox\n\n\nSELECTBOX_ORDER\n\n\nThe order in which the selectbox values should be displayed\n\n\nSELECTBOX_TYPE\n\n\nReserved for future use.", 
+            "title": "Selectboxes"
+        }, 
+        {
+            "location": "/dcc-selectbox/#data-controller-for-sas-selectboxes", 
+            "text": "", 
+            "title": "Data Controller for SAS\u00ae - Selectboxes"
+        }, 
+        {
+            "location": "/dcc-selectbox/#overview", 
+            "text": "To ensure data validity and to improve user experience, it is possible to predesignate specific values for data entry.  These appear to the user as a selectbox within the editor interface.", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/dcc-selectbox/#configuration", 
+            "text": "Values are added by populating the  DATACTRL.MPE_SELECTBOX  table, eg below:", 
+            "title": "Configuration"
+        }, 
+        {
+            "location": "/dcc-selectbox/#base_libds", 
+            "text": "The library.dataset to which the selectbox needs to be applied", 
+            "title": "BASE_LIBDS"
+        }, 
+        {
+            "location": "/dcc-selectbox/#base_column", 
+            "text": "The column in which the selectbox values will be entered", 
+            "title": "BASE_COLUMN"
+        }, 
+        {
+            "location": "/dcc-selectbox/#selectbox_value", 
+            "text": "The actual values to be shown in the selectbox", 
+            "title": "SELECTBOX_VALUE"
+        }, 
+        {
+            "location": "/dcc-selectbox/#selectbox_order", 
+            "text": "The order in which the selectbox values should be displayed", 
+            "title": "SELECTBOX_ORDER"
+        }, 
+        {
+            "location": "/dcc-selectbox/#selectbox_type", 
+            "text": "Reserved for future use.", 
+            "title": "SELECTBOX_TYPE"
+        }, 
+        {
+            "location": "/dci-backend/", 
+            "text": "Data Controller for SAS\u00ae - Backend Deployment\n\n\nOverview\n\n\nThe backend for data controller consists of a set of Stored Processes, a macro library, and a database.  The database can be SAS Base library if desired, however this can cause contention (eg table locks) if end users are able to connect to the datasets directly, eg via Enterprise Guide or Base SAS. \n\n\nDetails\n\n\n1 - Unzip dcbackend.zip and copy the files to a preferred location on the application server (eg SASApp).  This contains the SAS source code and ddl files.\n\n\n2 - Import datacontroller.spk using SAS Management Console.  The location in which this is deployed should be added to the \nmetadataRoot\n value in the \nh54s.config\n file as per \nfrontend\n deployment.\n\n\n3 - Create a staging directory.  This will contain the data submitted by editors and awaiting approval.  The Stored Process system account (eg \nsassrv\n) will need write access to this location. \n\n\n4 - Register a library in metadata for your preferred database.  The libref should be \nDATACTRL\n.  If this is not possible, then an alternative libref can be used, simply specify it in the configuration in step 6.\n\n\n5 - Make the \nmpeinit.sas\n macro available.  This \"initialisation\" macro needs to be available to a fresh Stored Process session.  There are several ways to do this, such as to \n%include\n from the \n/Lev1/StoredProcessServer/StoredProcessServer_usermods.sas\n file or to create a symlink from the \nsasautos\n directory.  \n\n\n6 - Configure the \nmpeinit.sas\n file.  This is where all your site specific locations are stored.  The following macro variables should be modified:\n\n\n\n\nmperepo\n - location of the files uploaded in step 1\n\n\nmpmetaroot\n - location where the STPs were deployed in step 2\n\n\nmpelocapprovals\n - location of staging directory as per step 3\n\n\nmpelib\n - if you were unable to use the \nDATACTRL\n libref in step 4, then use the updated libref here\n\n\nmpeadmins\n - enter the name of a metadata group (eg SASAdministrators) that should be given unrestricted access to the tool\n\n\n\n\n7 - Deploy the data model.  For this, simply run the following code:\n\n%mpeinit\n()\n\n\noptions\n \ninsert\n=\n(\nsasautos\n=\nmperepo/build\n);\n\n\n%mpe_build\n()\n\n\n\n\nThe next step is to deploy the \nfrontend\n.", 
+            "title": "Backend"
+        }, 
+        {
+            "location": "/dci-backend/#data-controller-for-sas-backend-deployment", 
+            "text": "", 
+            "title": "Data Controller for SAS\u00ae - Backend Deployment"
+        }, 
+        {
+            "location": "/dci-backend/#overview", 
+            "text": "The backend for data controller consists of a set of Stored Processes, a macro library, and a database.  The database can be SAS Base library if desired, however this can cause contention (eg table locks) if end users are able to connect to the datasets directly, eg via Enterprise Guide or Base SAS.", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/dci-backend/#details", 
+            "text": "1 - Unzip dcbackend.zip and copy the files to a preferred location on the application server (eg SASApp).  This contains the SAS source code and ddl files.  2 - Import datacontroller.spk using SAS Management Console.  The location in which this is deployed should be added to the  metadataRoot  value in the  h54s.config  file as per  frontend  deployment.  3 - Create a staging directory.  This will contain the data submitted by editors and awaiting approval.  The Stored Process system account (eg  sassrv ) will need write access to this location.   4 - Register a library in metadata for your preferred database.  The libref should be  DATACTRL .  If this is not possible, then an alternative libref can be used, simply specify it in the configuration in step 6.  5 - Make the  mpeinit.sas  macro available.  This \"initialisation\" macro needs to be available to a fresh Stored Process session.  There are several ways to do this, such as to  %include  from the  /Lev1/StoredProcessServer/StoredProcessServer_usermods.sas  file or to create a symlink from the  sasautos  directory.    6 - Configure the  mpeinit.sas  file.  This is where all your site specific locations are stored.  The following macro variables should be modified:   mperepo  - location of the files uploaded in step 1  mpmetaroot  - location where the STPs were deployed in step 2  mpelocapprovals  - location of staging directory as per step 3  mpelib  - if you were unable to use the  DATACTRL  libref in step 4, then use the updated libref here  mpeadmins  - enter the name of a metadata group (eg SASAdministrators) that should be given unrestricted access to the tool   7 - Deploy the data model.  For this, simply run the following code: %mpeinit ()  options   insert = ( sasautos = mperepo/build );  %mpe_build ()   The next step is to deploy the  frontend .", 
+            "title": "Details"
+        }, 
+        {
+            "location": "/dci-frontend/", 
+            "text": "Data Controller for SAS\u00ae - Frontend Deployment\n\n\nOverview\n\n\nThe Data Controller front end was built on the Angular seed app from Boemska AppFactory\u00ae.  As such it comes bundled with standard features such as log handling and SASLogon redirects.  It is deployed the the root of the SAS Web Server (mid-tier), typically \nhtdocs\n.\n\n\nInstructions\n\n\n1 - Unzip dcfrontend.zip and upload the entire \ndatacontroller\n directory to the static content server\n\n\n2 - Open the \nh54s.config\n file and update the \nmetadataRoot\n value to the location of the Stored Processes as per \nbackend\n deployment.\n\n\nIt should now be possible to use the application - simpliy navigate to YO\nURSASWEBLOC.domain/yourRoot/datacontroller and sign in!\n\n\nThe next step is to \nconfigure\n the tables.", 
+            "title": "Frontend"
+        }, 
+        {
+            "location": "/dci-frontend/#data-controller-for-sas-frontend-deployment", 
+            "text": "", 
+            "title": "Data Controller for SAS\u00ae - Frontend Deployment"
+        }, 
+        {
+            "location": "/dci-frontend/#overview", 
+            "text": "The Data Controller front end was built on the Angular seed app from Boemska AppFactory\u00ae.  As such it comes bundled with standard features such as log handling and SASLogon redirects.  It is deployed the the root of the SAS Web Server (mid-tier), typically  htdocs .", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/dci-frontend/#instructions", 
+            "text": "1 - Unzip dcfrontend.zip and upload the entire  datacontroller  directory to the static content server  2 - Open the  h54s.config  file and update the  metadataRoot  value to the location of the Stored Processes as per  backend  deployment.  It should now be possible to use the application - simpliy navigate to YO\nURSASWEBLOC.domain/yourRoot/datacontroller and sign in!  The next step is to  configure  the tables.", 
+            "title": "Instructions"
+        }
+    ]
+}
