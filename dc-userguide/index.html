@@ -501,30 +501,29 @@
 <li><em>Viewer</em>.  This tab lets users view any table to which they have been granted access in metadata.  They can also download the data as csv, excel, or as a SAS program (datalines).</li>
 <li><em>Editor</em>.  This tab enables users to add, modify or delete data. This can be done directly in the browser, or by uploading a CSV file. Values can also be copy-pasted from a spreadsheet. Once changes are ready, they can be submitted, with a corresponding reason.</li>
 <li><em>Submissions</em>.  This shows and editor the outstanding changes that have been submitted for approval (but have not yet been approved or rejected).</li>
-<li><em>Approvals</em>.  This shows an approver all the outstanding changes that are waiting to be approved.</li>
-<li><em>History</em>.  This shows an auditor, or other interested party, what changes have been submitted for each table over time.</li>
+<li><em>Approvals</em>.  This shows an approver all their outstanding approval requests.</li>
+<li><em>History</em>.  This shows an auditor, or other interested party, what changes have been submitted for each table.</li>
 </ul>
 <h2 id="viewer">Viewer</h2>
-<p>The Viewer screen lets any user with a SAS profile view tables to which they have already been granted access in metadata.  Simply Select libary / table and the View button.  The first 5,000 rows of the table in question are displayed.</p>
+<p>The Viewer screen lets any user with a SAS profile view tables to which they have already been granted access in metadata.  Simply Select library / table and the View button.  The first 5,000 rows of the table in question are displayed.</p>
 <p>It is also possible to build complex filters against data before viewing, via the Filter button.  The filter string is converted into an ID, as can be seen in the URL.  Simply share this link with any other SAS user to share that particular view.
 The Viewer also has a Download option.  This lets you Download your view of the data in CSV, Excel, and SAS format.  The SAS format option gives you a SAS program with the relevant DATALINES so that you can easily recreate your data in another instance of SAS.</p>
 <h2 id="editor">Editor</h2>
 <p>The Editor screen lets users who have been pre-authorised (via the <code>DATACTRL.MPE_SECURITY</code> table) to edit a particular table.  A user selects a particular library, and table and then has 3 options:</p>
 <p>1 - <em>Filter</em>.  The user can filter before proceeding to perform edits.</p>
 <p>2 - <em>Upload</em>.  The user can upload a CSV file directly, instead of using the interface.  The CSV must have the same structure as the target.  Use the 'download csv' option in Viewer to obtain a template of this CSV.</p>
-<p>3 - <em>Edit</em>.  The main interface, explained below.</p>
-<p>In the main interface, data is displayed in tabular format.  The first column is always "Delete?".  This allows you to mark rows for deletion.  Note that removing a row from display does not mark it for deletion!  It simply means that this row is not part of the changeset being submitted.
+<p>3 - <em>Edit</em>.  This is the main interface, data is displayed in tabular format.  The first column is always "Delete?", as this allows you to mark rows for deletion.  Note that removing a row from display does not mark it for deletion!  It simply means that this row is not part of the changeset being submitted.
 The next set of columns are the Primary Key, and are shaded grey.  If the table has a surrogate / retained key, then it is the Business Key that is shown here (the RK field is calculated / updated at the backend).  For SCD2 type tables, the 'validity' fields are not shown.  It is assumed that the user is always working with the current version of the data, and the view is filtered as such.
 After this, remaining columns are shown.  Dates / datetime fields have appropriate datepickers.  Other fields may also have dropdowns to ensure entry of standard values, these can be configured in the <code>DATACTRL.MPE_SELECTBOX</code> table.</p>
 <p>New rows can be added using the right click context menu, or the 'Add Row' button.  The data can also be sorted by clicking on the column headers.</p>
 <p>When ready to submit, hit the SUBMIT button and enter a reason for the change.  The owners of the data are now alerted (so long as their email addresses are in metadata) with a link to the approve screen.
-If you are also an approver you can approve this change yourself (and you have a button now available so you can approve immediately).  See Approve section.</p>
+If you are also an approver you can approve this change yourself.</p>
 <h2 id="submitted">Submitted</h2>
 <p>This page shows a list of the changes you have submitted (that are not yet approved).</p>
 <h2 id="approvals">Approvals</h2>
 <p>This shows the list of changes that have been submitted to you (or your group) for approval.</p>
 <h2 id="history">History</h2>
-<p>View the list of changes to each table, who made the change, when, etc. </p>
+<p>View the list of changes to each table, who made the change, when, etc.</p>
                 
                   
                 

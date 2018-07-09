@@ -252,13 +252,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-do-i-need-the-data-controller" title="Why do I need the Data Controller?" class="md-nav__link">
-    Why do I need the Data Controller?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#how-does-it-work" title="How does it work?" class="md-nav__link">
     How does it work?
   </a>
@@ -443,13 +436,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-do-i-need-the-data-controller" title="Why do I need the Data Controller?" class="md-nav__link">
-    Why do I need the Data Controller?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#how-does-it-work" title="How does it work?" class="md-nav__link">
     How does it work?
   </a>
@@ -480,38 +466,17 @@
               
                 
                 
-                <h1 id="data-controller-for-sas-overview">Data Controller for SAS: Overview</h1>
+                <h1 id="data-controller-for-sas-overview">Data Controller for SAS®: Overview</h1>
 <h2 id="what-does-the-data-controller-do">What does the Data Controller do?</h2>
-<p>The Data Controller for SAS allows users to add, modify, and delete data. All changes are staged and approved before being applied to the target table. The review process, as well as using generic and repeatable code to perform updates, works to ensure data integrity.</p>
+<p>The Data Controller allows users to add, modify, and delete data. All changes are staged and approved before being applied to the target table. The review process, as well as using generic and repeatable code to perform updates, works to ensure data integrity.</p>
 <h2 id="what-is-a-target-table">What is a Target Table?</h2>
 <p>A Target Table is a physical table, such as a SAS dataset or a Table in a database. The attributes of this table (eg Primary Key, loadtype, library, SCD variables etc) will have been predefined by your administrator so that you can change the data in that table safely and easily.</p>
-<h2 id="why-do-i-need-the-data-controller">Why do I need the Data Controller?</h2>
-<p>Alternatives to using the Data Controller for performing data updates include:</p>
-<ul>
-<li>Writing SAS or SQL code yourself to perform data updates</li>
-<li>Asking your DBA to to perform updates (following a change mangement process)</li>
-<li>Saving CSVs / data on a shared-visibility network drive and building / running jobs to perform uploads in batch</li>
-<li>Opening (and therefore locking) datasets in Enterprise Guide or SAS® Table Viewer to perform direct updates</li>
-<li>Building a custom web application yourself to perform secure updates</li>
-</ul>
-<p>Problems with the above approaches include one or more of the following:</p>
-<ul>
-<li>Risk of manual error / data corruption</li>
-<li>End users requiring direct write access to critical data sources in production</li>
-<li>Breaches due to unnecessary parties having access to the data</li>
-<li>Inability to trace who made the change, when, and why</li>
-<li>Reliance on key individuals to perform updates</li>
-<li>Requirement to build load routines every time a new data source is added</li>
-<li>Upload routines have to be manually modified when the table changes</li>
-<li>Legacy 'black box' solutions with little to no testing, documentation or support</li>
-</ul>
-<p>The Data Controller for SAS® solves the issues above.</p>
 <h2 id="how-does-it-work">How does it work?</h2>
-<p>From the Editor tab, a user selects a library and table for editing. Data can then be edited directly, or a uploaded from a file.  After submitting the change, the data is loaded to a secure staging area, and the approvers are notified.  The approver (wich may also be the editor, depeneding on cconfiguration) reviews the changes and accepts / or rejects. If accepted, the changes are applied to the target table by the system account, and the history of that change is recorded.</p>
+<p>From the Editor tab, a user selects a library and table for editing. Data can then be edited directly, or a uploaded from a file.  After submitting the change, the data is loaded to a secure staging area, and the approvers are notified.  The approver (which may also be the editor, depending on configuration) reviews the changes and accepts / or rejects them. If accepted, the changes are applied to the target table by the system account, and the history of that change is recorded.</p>
 <h2 id="who-is-it-for">Who is it for?</h2>
 <p>There are 5 roles identified for users of the Data Controller:</p>
 <ol>
-<li><em>Viewer</em>.  A viewer uses the Data Controller as a means to explore data without risk of locking datasets. By using the Data Controller to view data, it also becomes possible to 'link' to data (share a url to share a table with a colleague, for instance).</li>
+<li><em>Viewer</em>.  A viewer uses the Data Controller as a means to explore data without risk of locking datasets. By using the Data Controller to view data, it also becomes possible to 'link' to data (eg copy the url to share a table with a colleague).</li>
 <li><em>Editor</em>.  An editor makes changes to data in a table (add, modify, delete) and submits those changes to the approver(s) for acceptance.</li>
 <li><em>Approver</em>.  An approver accepts / rejects proposed changes to data under their control. If accepted, the change is applied to the target table.</li>
 <li><em>Auditor</em>.  An auditor has the ability to review the <a href="../dc-userguide/#history">history</a> of changes to a particular table.</li>

@@ -717,7 +717,7 @@
 <h3 id="dsn">DSN</h3>
 <p>The dataset (table) name as visible when assigning a direct libref connection to <code>LIBREF</code>.</p>
 <h3 id="num_of_approvals_required">NUM_OF_APPROVALS_REQUIRED</h3>
-<p>This is an integer representing the number of approvals required before a table is updated.  This mechanism lets you insist on, say, 2 or 3 approvals before sensitive data is updated following a submission.  Note that only one rejection is ever necessary to remove the submission.
+<p>This is an integer representing the number of approvals required before a table is updated.  This mechanism lets you insist on, for example, 2 or 3 approvals before sensitive data is updated following a submission.  Note that only one rejection is ever necessary to remove the submission.
 This is a required field.</p>
 <h3 id="loadtype">LOADTYPE</h3>
 <p>The loadtype determines the nature of the update to be applied.  Valid values are as follows:</p>
@@ -739,10 +739,10 @@ Leave blank if not required.</p>
 <p>Set the name of a variable (eg <code>processed_dttm</code>) which should be given a current timestamp whenever the table is updated.
 Leave blank if not required.</p>
 <h3 id="close_vars">CLOSE_VARS</h3>
-<p>By default, the data controller will only process the records that are part of a changeset.  This means that records should be explicity marked for deletion.  But what if you are performing a reload of a monthly batch, and the <em>absence</em> of a record implies that it is no longer required?  For this scenario, it is necessary to specify the range within a 'complete' load is expected.  For instance, by reporting month, or month + product.  When performing loads, the DC will then first extract a distinct list of values for this key and close them out in the target table, before performing the upload.  The <code>CLOSE_VARS</code> are typically a subset of the <a href="#buskey">BUSKEY</a> fields.
+<p>By default, the Data Controller will only process the records that are part of a changeset.  This means that records should be explicity marked for deletion.  But what if you are performing a reload of a monthly batch, and the <em>absence</em> of a record implies that it is no longer required?  For this scenario, it is necessary to specify the range within a 'complete' load is expected.  For instance, by reporting month, or month + product.  When performing loads, the DC will then first extract a distinct list of values for this key and close them out in the target table, before performing the upload.  The <code>CLOSE_VARS</code> are typically a subset of the <a href="#buskey">BUSKEY</a> fields.
 Leave blank if not required.</p>
 <h3 id="pre_edit_hook">PRE_EDIT_HOOK</h3>
-<p>The full path / location (unquoted) of a SAS program that will be <code>%inc</code>'d prior to an edit being made.  This allows a particular view of a table to be presented to a user for editing (eg masking columns etc). 
+<p>The full path / location (unquoted) of a SAS program that will be <code>%inc</code>'d prior to an edit being made.  This allows a particular view of a table to be presented to a user for editing (eg masking columns etc).
 Leave blank if not required.</p>
 <h3 id="post_edit_hook">POST_EDIT_HOOK</h3>
 <p>The full path / location (unquoted) of a SAS program that will be <code>%inc</code>'d after an edit has been made.  This modifies the CSV that is created in the staging area, and can be useful for augmenting data / applying complex DQ fixes.
