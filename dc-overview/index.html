@@ -75,6 +75,25 @@
       <defs>
         
         
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
       </defs>
     </svg>
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -144,6 +163,30 @@
         
       </div>
       
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/macropeople/dcdocs.github.io/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      macropeople/dcdocs.github.io
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
     </div>
   </nav>
 </header>
@@ -169,6 +212,28 @@
     </span>
     Data Controller for SAS® Product Documentation
   </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/macropeople/dcdocs.github.io/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      macropeople/dcdocs.github.io
+    </div>
+  </a>
+
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -465,15 +530,17 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/macropeople/dcdocs.github.io/edit/master/docs/dc-overview.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
-                <h1 id="data-controller-for-sas-overview">Data Controller for SAS®: Overview</h1>
-<h2 id="what-does-the-data-controller-do">What does the Data Controller do?</h2>
+                
+                <h1 id="data-controller-for-sas-overview">Data Controller for SAS®: Overview<a class="headerlink" href="#data-controller-for-sas-overview" title="Permanent link">&para;</a></h1>
+<h2 id="what-does-the-data-controller-do">What does the Data Controller do?<a class="headerlink" href="#what-does-the-data-controller-do" title="Permanent link">&para;</a></h2>
 <p>The Data Controller allows users to add, modify, and delete data. All changes are staged and approved before being applied to the target table. The review process, as well as using generic and repeatable code to perform updates, works to ensure data integrity.</p>
-<h2 id="what-is-a-target-table">What is a Target Table?</h2>
+<h2 id="what-is-a-target-table">What is a Target Table?<a class="headerlink" href="#what-is-a-target-table" title="Permanent link">&para;</a></h2>
 <p>A Target Table is a physical table, such as a SAS dataset or a Table in a database. The attributes of this table (eg Primary Key, loadtype, library, SCD variables etc) will have been predefined by your administrator so that you can change the data in that table safely and easily.</p>
-<h2 id="how-does-it-work">How does it work?</h2>
+<h2 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link">&para;</a></h2>
 <p>From the Editor tab, a user selects a library and table for editing. Data can then be edited directly, or a uploaded from a file.  After submitting the change, the data is loaded to a secure staging area, and the approvers are notified.  The approver (which may also be the editor, depending on configuration) reviews the changes and accepts / or rejects them. If accepted, the changes are applied to the target table by the system account, and the history of that change is recorded.</p>
-<h2 id="who-is-it-for">Who is it for?</h2>
+<h2 id="who-is-it-for">Who is it for?<a class="headerlink" href="#who-is-it-for" title="Permanent link">&para;</a></h2>
 <p>There are 5 roles identified for users of the Data Controller:</p>
 <ol>
 <li><em>Viewer</em>.  A viewer uses the Data Controller as a means to explore data without risk of locking datasets. By using the Data Controller to view data, it also becomes possible to 'link' to data (eg copy the url to share a table with a colleague).</li>

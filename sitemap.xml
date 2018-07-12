@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/</loc>
-     <lastmod>2018-07-09</lastmod>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/dc-overview/</loc>
-     <lastmod>2018-07-09</lastmod>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/dc-userguide/</loc>
-     <lastmod>2018-07-09</lastmod>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/dcc-tables/</loc>
-     <lastmod>2018-07-09</lastmod>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/dcc-security/</loc>
-     <lastmod>2018-07-09</lastmod>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/dcc-selectbox/</loc>
-     <lastmod>2018-07-09</lastmod>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/dci-backend/</loc>
-     <lastmod>2018-07-09</lastmod>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/dci-frontend/</loc>
-     <lastmod>2018-07-09</lastmod>
+     <lastmod>2018-07-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

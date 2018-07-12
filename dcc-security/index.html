@@ -75,6 +75,25 @@
       <defs>
         
         
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
       </defs>
     </svg>
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -144,6 +163,30 @@
         
       </div>
       
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/macropeople/dcdocs.github.io/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      macropeople/dcdocs.github.io
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
     </div>
   </nav>
 </header>
@@ -169,6 +212,28 @@
     </span>
     Data Controller for SAS® Product Documentation
   </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/macropeople/dcdocs.github.io/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      macropeople/dcdocs.github.io
+    </div>
+  </a>
+
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -437,14 +502,16 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/macropeople/dcdocs.github.io/edit/master/docs/dcc-security.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
-                <h1 id="data-controller-for-sas-security">Data Controller for SAS® - Security</h1>
-<h2 id="summary">Summary</h2>
+                
+                <h1 id="data-controller-for-sas-security">Data Controller for SAS® - Security<a class="headerlink" href="#data-controller-for-sas-security" title="Permanent link">&para;</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
 <p>The Data Controller works at the level of Table and Group.  Permissions can only be set at group level, and so there are two parts to adding a user:</p>
 <p>1 - Adding the user to the relevant group in SAS metadata</p>
 <p>2 - Ensuring that group has the appropriate access level in the configuration table</p>
 <p>For guidance with adding SAS users, see SAS Documentation.</p>
-<h2 id="details">Details</h2>
+<h2 id="details">Details<a class="headerlink" href="#details" title="Permanent link">&para;</a></h2>
 <p>In order to surface a table to a new group, simply add a record to the <code>DATACTRL.MPE_SECURITY</code> table.  The <code>library.dataset</code> value should go in the <code>BASE_TABLE</code> field, the level of access (either <em>EDIT</em> or <em>APPROVE</em>) should go in the <code>ACCESS_LEVEL</code> field, and the exact name of the relevant metadata group should go in the <code>SAS_GROUP</code> field.  The change should then be submitted, and approved, at which point the new security setting will be applied.</p>
 <p><img alt="Screenshot" src="../img/securitytable.png" /></p>
                 
