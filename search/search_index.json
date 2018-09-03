@@ -292,7 +292,7 @@
         }, 
         {
             "location": "/dci-frontend/", 
-            "text": "Data Controller for SAS\u00ae - Frontend Deployment\n\n\nOverview\n\n\nThe Data Controller front end was built on the Angular seed app from Boemska AppFactory\u00ae.  As such it comes bundled with standard features such as log handling and SASLogon redirects.  It is deployed the the root of the SAS Web Server (mid-tier), typically \nhtdocs\n.\n\n\nInstructions\n\n\n1 - Unzip dcfrontend.zip and upload the entire \ndatacontroller\n directory to the static content server.\n\n\n2 - Open the \nh54s.config\n file and update the \nmetadataRoot\n value to the location of the Stored Processes as per \nbackend\n deployment.\n\n\nIt should now be possible to use the application - simply navigate to \nYO\nURSASWEBLOC.domain/yourRoot/datacontroller\n and sign in!\n\n\nThe next step is to \nconfigure\n the tables.", 
+            "text": "Data Controller for SAS\u00ae - Frontend Deployment\n\n\nOverview\n\n\nThe Data Controller front end was built on the Angular seed app from Boemska AppFactory\u00ae.  As such it comes bundled with standard features such as log handling and SASLogon redirects.  It is deployed the the root of the SAS Web Server (mid-tier), typically \nhtdocs\n.\n\n\nInstructions\n\n\n1 - Unzip dcfrontend.zip and upload the entire \ndatacontroller\n directory to the static content server.\n\n\n2 - Open the \nh54s.config\n file and update the \nmetadataRoot\n value to the location of the Stored Processes as per \nbackend\n deployment.  Remember to include the trailing slash (\n/\n).\n\n\nIt should now be possible to use the application - simply navigate to \nYO\nURSASWEBLOC.domain/yourRoot/datacontroller\n and sign in!\n\n\nThe next step is to \nconfigure\n the tables.", 
             "title": "Frontend"
         }, 
         {
@@ -307,8 +307,28 @@
         }, 
         {
             "location": "/dci-frontend/#instructions", 
-            "text": "1 - Unzip dcfrontend.zip and upload the entire  datacontroller  directory to the static content server.  2 - Open the  h54s.config  file and update the  metadataRoot  value to the location of the Stored Processes as per  backend  deployment.  It should now be possible to use the application - simply navigate to  YO\nURSASWEBLOC.domain/yourRoot/datacontroller  and sign in!  The next step is to  configure  the tables.", 
+            "text": "1 - Unzip dcfrontend.zip and upload the entire  datacontroller  directory to the static content server.  2 - Open the  h54s.config  file and update the  metadataRoot  value to the location of the Stored Processes as per  backend  deployment.  Remember to include the trailing slash ( / ).  It should now be possible to use the application - simply navigate to  YO\nURSASWEBLOC.domain/yourRoot/datacontroller  and sign in!  The next step is to  configure  the tables.", 
             "title": "Instructions"
+        }, 
+        {
+            "location": "/dci-troubleshooting/", 
+            "text": "Data Controller for SAS\u00ae - Troubleshooting\n\n\nOverview\n\n\nLet us know\n if you experience an installation problem that is not described here!\n\n\nInternet Explorer - blank screen\n\n\nIf you have an older, or 'locked down' version of Internet Explorer you may get a blank / white screen when navigating to the Data Controller url.  To fix this, click settings (cog icon in top right), \nCompatibility View settings\n, then \nuncheck\n \nDisplay intranet sites in Compatibility view\n as follows:", 
+            "title": "Troubleshooting"
+        }, 
+        {
+            "location": "/dci-troubleshooting/#data-controller-for-sas-troubleshooting", 
+            "text": "", 
+            "title": "Data Controller for SAS\u00ae - Troubleshooting"
+        }, 
+        {
+            "location": "/dci-troubleshooting/#overview", 
+            "text": "Let us know  if you experience an installation problem that is not described here!", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/dci-troubleshooting/#internet-explorer-blank-screen", 
+            "text": "If you have an older, or 'locked down' version of Internet Explorer you may get a blank / white screen when navigating to the Data Controller url.  To fix this, click settings (cog icon in top right),  Compatibility View settings , then  uncheck   Display intranet sites in Compatibility view  as follows:", 
+            "title": "Internet Explorer - blank screen"
         }
     ]
 }
